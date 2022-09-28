@@ -1,39 +1,15 @@
-# Megatech Token
-he official repo for the Megatech (MGT) Token, with description of: all of the unit tests used and the contracts deployed to the Binance Smart Chain for the MGT token.
-# Project Status
-The token contract has been deployed to the Binance Smart Chain (BSC).
+# Basic Sample Hardhat Project
 
-# Getting Started
-Recommended Node version is 16.0.0 and above.
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
 
-```bash
-$ npx yarn
-$ npx hardhat node
-$ npx hardhat test
-```
+Try running some of the following tasks:
 
-# Project Structure
-This a hardhat javascript project.
-
-## Tests
-
-Tests are found in the `./test/` folder. `./sample-test.js` contains various test helpers.
-
-## Contracts
-
-Solidity smart contracts are found in `./contracts/`.
-`./contracts` folder contains contracts 
-
-## Deploy
-Deploy script can be found in the `scripts/sample-scripts.js` folder.
-
-To add the private key of a deployer account, assign the following variable in``hardhat-config.js`
-```
-account : ["PRIVATE KEY "]
-```
-
-# Deploy Contract
-
-```bash
-$ npx hardhat run scripts/sample-script.js --network bsc
+```shell
+npx hardhat accounts
+npx hardhat compile
+npx hardhat clean
+npx hardhat test
+npx hardhat node
+node scripts/sample-script.js
+npx hardhat help
 ```
